@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'tuna': '#343541',
+        'tuna': '#ecfb72',
       },
     },
   },
