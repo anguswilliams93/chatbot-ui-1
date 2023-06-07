@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'tuna': '#ecfb72',
+        'yellow-zerobi': '#ecfb72',
         'black-zerobi': '#000000'
       },
     },
