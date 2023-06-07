@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         'tuna': '#ecfb72',
+        'black-zerobi': '#000000'
       },
     },
   },
