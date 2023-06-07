@@ -399,18 +399,18 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             {selectedConversation?.messages.length === 0 ? (
               <>
                 <div className="mx-auto flex flex-col space-y-5 md:space-y-10 px-3 pt-5 md:pt-12 sm:max-w-[600px]">
-                  <div className="text-center text-3xl font-semibold text-gray-800 dark:text-yellow-zerobi">
+                  <div className="text-center text-3xl font-consolas text-gray-800 dark:text-yellow-zerobi">
                     {models.length === 0 ? (
                       <div>
-                        <Spinner size="16px" className="mx-auto" />
+                        <Spinner size="20px" className="mx-auto" />
                       </div>
                     ) : (
-                      'Chatbot UI'
+                      'zerobi ~ chippa'
                     )}
                   </div>
 
                   {models.length > 0 && (
-                    <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
+                    <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-yellow-zerobi">
                       <ModelSelect />
 
                       <SystemPrompt
@@ -457,7 +457,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                 </div>
                 {showSettings && (
                   <div className="flex flex-col space-y-10 md:mx-auto md:max-w-xl md:gap-6 md:py-3 md:pt-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-                    <div className="flex h-full flex-col space-y-4 border-b border-neutral-200 p-4 dark:border-neutral-600 md:rounded-lg md:border">
+                    <div className="flex h-full flex-col space-y-4 border-b border-neutral-200 p-4 dark:border-yellow-zerobi md:rounded-lg md:border">
                       <ModelSelect />
                     </div>
                   </div>
