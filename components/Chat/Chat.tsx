@@ -399,7 +399,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             {selectedConversation?.messages.length === 0 ? (
               <>
                 <div className="mx-auto flex flex-col space-y-5 md:space-y-10 px-3 pt-5 md:pt-12 sm:max-w-[600px]">
-                  <div className="text-center text-4xl font-sans text-gray-800 dark:text-yellow-zerobi">
+                  <div className="text-center text-4xl font-mono text-gray-800 dark:text-yellow-zerobi">
                     {models.length === 0 ? (
                       <div>
                         <Spinner size="20px" className="mx-auto" />
