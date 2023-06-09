@@ -31,7 +31,7 @@ export const ModelSelect = () => {
       <label className="mb-2 text-left text-neutral-700 dark:text-yellow-zerobi">
         {t('Model')}
       </label>
-      <div className="w-full rounded-lg border border-neutral-200 bg-transparent pr-2 text-neutral-900 dark:border-yellow-zerobi dark:text-yellow-zerobi">
+      <div className="w-full rounded-lg border border-neutral-200 bg-transparent pr-2 font-mono text-neutral-900 dark:border-yellow-zerobi dark:text-yellow-zerobi">
         <select
           className="w-full bg-transparent p-2"
           placeholder={t('Select a model') || ''}
@@ -51,7 +51,7 @@ export const ModelSelect = () => {
           ))}
         </select>
       </div>
-      <div className="w-full mt-3 text-left text-neutral-700 dark:text-yellow-zerobi flex items-center">
+      <div className="w-full mt-3 text-left text-neutral-700 font-mono dark:text-yellow-zerobi flex items-center">
         <a
           href="https://platform.openai.com/account/usage"
           target="_blank"

@@ -410,7 +410,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                   </div>
 
                   {models.length > 0 && (
-                    <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-yellow-zerobi">
+                    <div className="flex h-full flex-col space-y-4 rounded-lg border font-mono border-neutral-200 p-4 dark:border-yellow-zerobi">
                       <ModelSelect />
 
                       <SystemPrompt
@@ -439,7 +439,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
               </>
             ) : (
               <>
-                <div className="sticky top-0 z-10 flex justify-center border border-b-neutral-300 bg-neutral-100 py-2 text-sm text-neutral-500 dark:border-none dark:bg-black-zerobi dark:text-yellow-zerobi">
+                <div className="sticky top-0 z-10 flex justify-center border border-b-neutral-300 bg-neutral-100 py-2 text-sm font-mono text-neutral-500 dark:border-none dark:bg-black-zerobi dark:text-yellow-zerobi">
                   {t('Model')}: {selectedConversation?.model.name} | {t('Temp')}
                   : {selectedConversation?.temperature} |
                   <button
@@ -457,7 +457,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                 </div>
                 {showSettings && (
                   <div className="flex flex-col space-y-10 md:mx-auto md:max-w-xl md:gap-6 md:py-3 md:pt-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-                    <div className="flex h-full flex-col space-y-4 border-b border-neutral-200 p-4 dark:border-yellow-zerobi md:rounded-lg md:border">
+                    <div className="flex h-full flex-col space-y-4 border-b border-neutral-200 font-mono p-4 dark:border-yellow-zerobi md:rounded-lg md:border">
                       <ModelSelect />
                     </div>
                   </div>

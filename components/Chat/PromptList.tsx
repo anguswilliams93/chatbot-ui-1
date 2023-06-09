@@ -20,7 +20,7 @@ export const PromptList: FC<Props> = ({
   return (
     <ul
       ref={promptListRef}
-      className="z-10 max-h-52 w-full overflow-scroll rounded border border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:border-neutral-500 dark:bg-black-zerobi dark:text-yellow-zerobi dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]"
+      className="z-10 max-h-52 w-full overflow-scroll rounded border border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] font-mono dark:border-neutral-500 dark:bg-black-zerobi dark:text-yellow-zerobi dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]"
     >
       {prompts.map((prompt, index) => (
         <li
@@ -29,7 +29,7 @@ export const PromptList: FC<Props> = ({
             index === activePromptIndex
               ? 'bg-gray-200 dark:bg-black-zerobi dark:text-yellow-zerobi'
               : ''
-          } cursor-pointer px-3 py-2 text-sm text-black dark:text-yellow-zerobi`}
+          } cursor-pointer px-3 py-2 text-sm font-mono text-black dark:text-yellow-zerobi`}
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();

@@ -261,7 +261,7 @@ export const ChatInput = ({
       <div className="stretch mx-2 mt-4 flex flex-row gap-3 last:mb-2 md:mx-4 md:mt-[52px] md:last:mb-6 lg:mx-auto lg:max-w-3xl">
         {messageIsStreaming && (
           <button
-            className="absolute top-0 left-0 right-0 mx-auto mb-3 flex w-fit items-center gap-3 rounded border border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi md:mb-0 md:mt-2"
+            className="absolute top-0 left-0 right-0 mx-auto mb-3 flex w-fit items-center gap-3 rounded border font-mono border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi md:mb-0 md:mt-2"
             onClick={handleStopConversation}
           >
             <IconPlayerStop size={16} /> {t('stop dude')}
@@ -272,7 +272,7 @@ export const ChatInput = ({
           selectedConversation &&
           selectedConversation.messages.length > 0 && (
             <button
-              className="absolute top-0 left-0 right-0 mx-auto mb-3 flex w-fit items-center gap-3 rounded border border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi md:mb-0 md:mt-2"
+              className="absolute top-0 left-0 right-0 mx-auto mb-3 flex w-fit items-center gap-3 rounded border font-mono border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi md:mb-0 md:mt-2"
               onClick={onRegenerate}
             >
               <IconRepeat size={16} /> {t('regenerate your answer')}
@@ -313,7 +313,7 @@ export const ChatInput = ({
 
           <textarea
             ref={textareaRef}
-            className="m-0 w-full resize-none border-0 bg-transparent p-0 py-2 pr-8 pl-10 text-black dark:bg-black-zerobi dark:text-yellow-zerobi md:py-3 md:pl-10"
+            className="m-0 w-full resize-none border-0 bg-transparent p-0 py-2 pr-8 pl-10 text-black font-mono dark:bg-black-zerobi dark:text-yellow-zerobi md:py-3 md:pl-10"
             style={{
               resize: 'none',
               bottom: `${textareaRef?.current?.scrollHeight}px`,
@@ -379,7 +379,7 @@ export const ChatInput = ({
           )}
         </div>
       </div>
-      <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-yellow-zerobi/50 md:px-4 md:pt-3 md:pb-6">
+      <div className="px-3 pt-2 pb-3 text-center text-[12px] font-mono text-black/50 dark:text-yellow-zerobi/50 md:px-4 md:pt-3 md:pb-6">
         <a
           href="https://github.com/anguswilliams93/chatbot-ui-1"
           target="_blank"
