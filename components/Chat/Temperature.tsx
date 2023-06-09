@@ -50,6 +50,7 @@ export const TemperatureSlider: FC<Props> = ({
         step={0.1}
         value={temperature}
         onChange={handleChange}
+        style= {{ backgroundColor: '#ecbf72' }}
       />
       <ul className="w mt-2 pb-8 flex justify-between px-[24px] font-mono text-neutral-900 dark:text-yellow-zerobi">
         <li className="flex justify-center">
