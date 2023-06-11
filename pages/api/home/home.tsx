@@ -360,7 +360,7 @@ const Home = ({
       }}
     >
       <Head>
-        <title>Chatbot UI</title>
+        <title>chippa</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"
@@ -370,7 +370,7 @@ const Home = ({
       </Head>
       {selectedConversation && (
         <main
-          className={`flex h-screen w-screen flex-col text-sm text-white dark:text-white ${lightMode}`}
+          className={`flex h-screen w-screen flex-col text-sm text-white dark:text-yellow-zerobi ${lightMode}`}
         >
           <div className="fixed top-0 w-full sm:hidden">
             <Navbar

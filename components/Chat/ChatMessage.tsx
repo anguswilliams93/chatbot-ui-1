@@ -128,13 +128,13 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
     <div
       className={`group md:px-4 ${
         message.role === 'assistant'
-          ? 'border-b border-black/10 bg-gray-50 text-gray-800 dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
-          : 'border-b border-black/10 bg-white text-gray-800 dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
+          ? 'border-b border-black/10 bg-gray-50 text-gray-800 font-mono dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
+          : 'border-b border-black/10 bg-white text-gray-800 font-mono dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
       }`}
       style={{ overflowWrap: 'anywhere' }}
     >
       <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-        <div className="min-w-[40px] text-right font-bold">
+        <div className="min-w-[40px] text-right font-mono">
           {message.role === 'assistant' ? (
             <IconRobot size={30} />
           ) : (
@@ -149,7 +149,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                 <div className="flex w-full flex-col">
                   <textarea
                     ref={textareaRef}
-                    className="w-full resize-none whitespace-pre-wrap border-none dark:bg-black-zerobi"
+                    className="w-full resize-none whitespace-pre-wrap font-mono border-none dark:bg-black-zerobi"
                     value={messageContent}
                     onChange={handleInputChange}
                     onKeyDown={handlePressEnter}
