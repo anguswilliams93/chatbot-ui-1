@@ -2,9 +2,10 @@ import {
   IconCheck,
   IconCopy,
   IconEdit,
-  IconRobot,
+  // IconRobot,
   IconTrash,
   IconUser,
+  IconDogBowl
 } from '@tabler/icons-react';
 import { FC, memo, useContext, useEffect, useRef, useState } from 'react';
 
@@ -136,7 +137,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
       <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
         <div className="min-w-[40px] text-right font-mono">
           {message.role === 'assistant' ? (
-            <IconRobot size={30} />
+            <IconDogBowl size={30} />
           ) : (
             <IconUser size={30} />
           )}
