@@ -381,7 +381,7 @@ export const ChatInput = ({
       </div>
       <div className="px-3 pt-2 pb-3 text-center text-[12px] font-mono text-black/50 dark:text-yellow-zerobi/50 md:px-4 md:pt-3 md:pb-6">
         <a
-          href="https://github.com/anguswilliams93/chatbot-ui-1"
+          href="https://zerobi.au/"
           target="_blank"
           rel="noreferrer"
           className="underline"
@@ -390,7 +390,7 @@ export const ChatInput = ({
         </a>
         .{' '}
         {t(
-          "is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.",
+          "is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality, please avoid sending personal and private data through this application.",
         )}
       </div>
     </div>
