@@ -275,7 +275,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                   />
                 ) : (
                   <button
-                    className="invisible group-hover:visible focus:visible text-gray-500 hover:text-gray-700 dark:text-yellow-zerobi dark:hover:text-gray-300"
+                    className="invisible group-hover:visible focus:visible text-blue-zerobi-500 hover:text-blue-zerobi dark:text-blue-zerobi dark:hover:text-blue-zerobi"
                     onClick={copyOnClick}
                   >
                     <IconCopy size={20} />

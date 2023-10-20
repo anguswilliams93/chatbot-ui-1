@@ -37,7 +37,7 @@ export const ChatbarSettings = () => {
   } = useContext(ChatbarContext);
 
   return (
-    <div className="flex flex-col items-center space-y-1 border-yellow-zerobi pt-1 text-sm">
+    <div className="flex flex-col items-center space-y-1 border-blue-zerobi pt-1 text-sm">
       {conversations.length > 0 ? (
         <ClearConversations onClearConversations={handleClearConversations} />
       ) : null}

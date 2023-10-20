@@ -360,7 +360,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
               Important: Chatbot UI is 100% unaffiliated with OpenAI.
             </div>
           </div>
-          <div className="text-center text-gray-500 dark:text-yellow-zerobi">
+          <div className="text-center text-blue-zerobi-500 dark:text-blue-zerobi">
             <div className="mb-2">
               Chatbot UI allows you to plug in your API key to use this UI with
               their API.
@@ -399,7 +399,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             {selectedConversation?.messages.length === 0 ? (
               <>
                 <div className="mx-auto flex flex-col space-y-5 md:space-y-10 px-3 pt-5 md:pt-12 sm:max-w-[600px]">
-                  <div className="text-center text-4xl font-mono text-gray-800 dark:text-yellow-zerobi">
+                  <div className="text-center text-4xl font-sans text-blue-zerobi-800 dark:text-blue-zerobi">
                     {models.length === 0 ? (
                       <div>
                         <Spinner size="20px" className="mx-auto" />

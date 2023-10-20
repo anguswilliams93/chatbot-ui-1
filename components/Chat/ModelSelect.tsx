@@ -28,10 +28,10 @@ export const ModelSelect = () => {
 
   return (
     <div className="flex flex-col">
-      <label className="mb-2 text-left text-neutral-700 dark:text-yellow-zerobi">
+      <label className="mb-2 text-left text-blue-zerobi dark:text-yellow-zerobi">
         {t('Model')}
       </label>
-      <div className="w-full rounded-lg border border-neutral-200 bg-transparent pr-2 font-mono text-neutral-900 dark:border-yellow-zerobi dark:text-yellow-zerobi">
+      <div className="w-full rounded-lg border border-blue-zerobi bg-transparent pr-2 font-mono text-blue-zerobi dark:border-yellow-zerobi dark:text-yellow-zerobi">
         <select
           className="w-full bg-transparent p-2"
           placeholder={t('Select a model') || ''}
