@@ -134,7 +134,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
       }`}
       style={{ overflowWrap: 'anywhere' }}
     >
-      <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
+      <div className="relative m-auto flex p-4 text-blue-zerobi md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
         <div className="min-w-[40px] text-right font-sans">
           {message.role === 'assistant' ? (
             <IconDogBowl size={30} />
@@ -150,7 +150,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                 <div className="flex w-full flex-col">
                   <textarea
                     ref={textareaRef}
-                    className="w-full resize-none whitespace-pre-wrap font-sans border-none dark:bg-black-zerobi"
+                    className="w-full resize-none whitespace-pre-wrap font-sans text-blue-zerobi border-none dark:bg-black-zerobi dark:text-yellow-zerobi"
                     value={messageContent}
                     onChange={handleInputChange}
                     onKeyDown={handlePressEnter}
@@ -168,14 +168,14 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
 
                   <div className="mt-10 flex justify-center space-x-4">
                     <button
-                      className="h-[40px] rounded-md bg-blue-500 px-4 py-1 text-sm font-medium text-blue-zerobi enabled:hover:bg-blue-600 disabled:opacity-50"
+                      className="h-[40px] rounded-md bg-blue-500 px-4 py-1 font-medium text-blue-zerobi enabled:hover:bg-blue-600 disabled:opacity-50"
                       onClick={handleEditMessage}
                       disabled={messageContent.trim().length <= 0}
                     >
                       {t('Save & Submit')}
                     </button>
                     <button
-                      className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 text-sm font-mono text-blue-zerobi hover:bg-neutral-100 dark:border-yellow-zerobi dark:text-yellow-zerobi dark:hover:bg-black-zerobi"
+                      className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 font-mono text-blue-zerobi hover:bg-neutral-100 dark:border-yellow-zerobi dark:text-yellow-zerobi dark:hover:bg-black-zerobi"
                       onClick={() => {
                         setMessageContent(message.content);
                         setIsEditing(false);
@@ -248,14 +248,14 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                   },
                   th({ children }) {
                     return (
-                      <th className="break-words border border-black bg-gray-500 font-mono px-3 py-1 text-white dark:border-yellow-zerobi">
+                      <th className="break-words border border-black bg-pink-zerobi font-mono px-3 py-1 text-blue-zerobi dark:border-yellow-zerobi">
                         {children}
                       </th>
                     );
                   },
                   td({ children }) {
                     return (
-                      <td className="break-words border border-black px-3 py-1 font-mono dark:border-yellow-zerobi">
+                      <td className="break-words border border-blue-zerobi px-3 py-1 font-mono dark:border-yellow-zerobi">
                         {children}
                       </td>
                     );
@@ -271,11 +271,11 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                 {messagedCopied ? (
                   <IconCheck
                     size={20}
-                    className="text-green-500 dark:text-green-400"
+                    className="text-blue-zerobi dark:text-yellow-zerobi"
                   />
                 ) : (
                   <button
-                    className="invisible group-hover:visible focus:visible text-blue-zerobi-500 hover:text-blue-zerobi dark:text-blue-zerobi dark:hover:text-blue-zerobi"
+                    className="invisible group-hover:visible focus:visible text-blue-zerobi hover:text-black dark:text-yellow-zerobi dark:hover:text-white"
                     onClick={copyOnClick}
                   >
                     <IconCopy size={20} />
