@@ -16,8 +16,8 @@ module.exports = {
       colors: {
         'yellow-zerobi': '#0100FE',
         'black-zerobi': '#FEE1DA',
-        'pink-zerobi': 'FEE1DA',
-        'blue-zerobi': '0100FE'
+        'pink-zerobi': '#FEE1DA',
+        'blue-zerobi': '#0100FE'
       },
     },
   },
