@@ -352,17 +352,17 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
       {!(apiKey || serverSideApiKeyIsSet) ? (
         <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
           <div className="text-center text-4xl font-mono text-black dark:text-yellow-zerobi">
-            Welcome to Chatbot UI
+            Welcome to Chippa
           </div>
           <div className="text-center text-lg text-black dark:text-yellow-zerobi">
             <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
             <div className="mb-2 font-bold">
-              Important: Chatbot UI is 100% unaffiliated with OpenAI.
+              Important: Chippa is 100% unaffiliated with OpenAI.
             </div>
           </div>
           <div className="text-center text-blue-zerobi-500 dark:text-blue-zerobi">
             <div className="mb-2">
-              Chatbot UI allows you to plug in your API key to use this UI with
+              Chippa allows you to plug in your API key to use this UI with
               their API.
             </div>
             <div className="mb-2">

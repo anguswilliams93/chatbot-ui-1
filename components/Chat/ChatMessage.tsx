@@ -129,13 +129,13 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
     <div
       className={`group md:px-4 ${
         message.role === 'assistant'
-          ? 'border-b border-black/10 bg-gray-50 text-gray-800 font-mono dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
-          : 'border-b border-black/10 bg-white text-gray-800 font-mono dark:border-gray-900/50 dark:bg-black-zerobi dark:text-yellow-zerobi'
+          ? 'border-b border-blue-zerobi bg-pink-zerobi text-blue-zerobi font-sans dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi'
+          : 'border-b border-blue-zerobi bg-pink-zerobi text-blue-zerobi font-sans dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi'
       }`}
       style={{ overflowWrap: 'anywhere' }}
     >
       <div className="relative m-auto flex p-4 text-base md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-        <div className="min-w-[40px] text-right font-mono">
+        <div className="min-w-[40px] text-right font-sans">
           {message.role === 'assistant' ? (
             <IconDogBowl size={30} />
           ) : (
@@ -150,7 +150,7 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
                 <div className="flex w-full flex-col">
                   <textarea
                     ref={textareaRef}
-                    className="w-full resize-none whitespace-pre-wrap font-mono border-none dark:bg-black-zerobi"
+                    className="w-full resize-none whitespace-pre-wrap font-sans border-none dark:bg-black-zerobi"
                     value={messageContent}
                     onChange={handleInputChange}
                     onKeyDown={handlePressEnter}
@@ -168,14 +168,14 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
 
                   <div className="mt-10 flex justify-center space-x-4">
                     <button
-                      className="h-[40px] rounded-md bg-blue-500 px-4 py-1 text-sm font-medium text-white enabled:hover:bg-blue-600 disabled:opacity-50"
+                      className="h-[40px] rounded-md bg-blue-500 px-4 py-1 text-sm font-medium text-blue-zerobi enabled:hover:bg-blue-600 disabled:opacity-50"
                       onClick={handleEditMessage}
                       disabled={messageContent.trim().length <= 0}
                     >
                       {t('Save & Submit')}
                     </button>
                     <button
-                      className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 text-sm font-mono text-neutral-700 hover:bg-neutral-100 dark:border-yellow-zerobi dark:text-yellow-zerobi dark:hover:bg-black-zerobi"
+                      className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 text-sm font-mono text-blue-zerobi hover:bg-neutral-100 dark:border-yellow-zerobi dark:text-yellow-zerobi dark:hover:bg-black-zerobi"
                       onClick={() => {
                         setMessageContent(message.content);
                         setIsEditing(false);
@@ -194,13 +194,13 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
               {!isEditing && (
                 <div className="md:-mr-8 ml-1 md:ml-0 flex flex-col md:flex-row gap-4 md:gap-1 items-center md:items-start justify-end md:justify-start">
                   <button
-                    className="invisible group-hover:visible focus:visible font-mono text-gray-500 hover:text-gray-700 dark:text-yellow-zerobi dark:hover:text-gray-300"
+                    className="invisible group-hover:visible focus:visible font-mono text-blue-zerobi hover:text-blue-zerobi dark:text-yellow-zerobi dark:hover:text-yellow-zerobi"
                     onClick={toggleEditing}
                   >
                     <IconEdit size={20} />
                   </button>
                   <button
-                    className="invisible group-hover:visible focus:visible font-mono text-gray-500 hover:text-gray-700 dark:text-yellow-zerobi dark:hover:text-gray-300"
+                    className="invisible group-hover:visible focus:visible font-mono text-blue-zerobi hover:text-blue-zerobi dark:text-yellow-zerobi dark:hover:text-yellow-zerobi"
                     onClick={handleDeleteMessage}
                   >
                     <IconTrash size={20} />
