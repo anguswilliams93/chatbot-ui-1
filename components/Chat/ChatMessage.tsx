@@ -137,9 +137,9 @@ export const ChatMessage: FC<Props> = memo(({ message, messageIndex, onEdit }) =
       <div className="relative m-auto flex p-4 text-blue-zerobi md:max-w-2xl md:gap-6 md:py-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
         <div className="min-w-[40px] text-right font-sans">
           {message.role === 'assistant' ? (
-            <IconDogBowl size={30} />
+            <IconDogBowl size={40} />
           ) : (
-            <IconUser size={30} />
+            <IconUser size={40} />
           )}
         </div>
 

@@ -281,7 +281,7 @@ export const ChatInput = ({
 
         <div className="relative mx-2 flex w-full flex-grow flex-col rounded-md border border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:border-yellow-zerobi dark:bg-black-zerobi dark:text-yellow-zerobi dark:shadow-[0_0_15px_rgba(0,0,0,0.10)] sm:mx-4">
           <button
-            className="absolute left-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-blue-zerobi hover:text-blue-zerobi dark:bg-opacity-50 dark:text-yellow-zerobi dark:hover:text-blue-zerobi"
+            className="absolute left-2 top-2 rounded-sm p-1 text-blue-zerobi opacity-60 hover:bg-blue-zerobi hover:text-blue-zerobi dark:bg-opacity-50 dark:text-yellow-zerobi dark:hover:text-blue-zerobi"
             onClick={() => setShowPluginSelect(!showPluginSelect)}
             onKeyDown={(e) => {}}
           >
@@ -336,11 +336,11 @@ export const ChatInput = ({
           />
 
           <button
-            className="absolute right-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-blue-zerobi hover:text-blue-zerobi dark:bg-opacity-50 dark:text-yellow-zerobi dark:hover:text-blue-zerobi"
+            className="absolute right-2 top-2 rounded-sm p-1 text-blue-zerobi opacity-60 hover:bg-blue-zerobi hover:text-blue-zerobi dark:bg-opacity-50 dark:text-yellow-zerobi dark:hover:text-blue-zerobi"
             onClick={handleSend}
           >
             {messageIsStreaming ? (
-              <div className="h-4 w-4 animate-spin rounded-full border-t-2 border-neutral-800 opacity-60 dark:border-yellow-zerobi"></div>
+              <div className="h-4 w-4 animate-spin rounded-full border-t-2 border-blue-zerobi opacity-60 dark:border-yellow-zerobi"></div>
             ) : (
               <IconSend size={18} />
             )}

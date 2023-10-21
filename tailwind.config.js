@@ -14,8 +14,8 @@ module.exports = {
         mono: ['Courier New', 'monospace'],
       },
       colors: {
-        'yellow-zerobi': '#0100FE',
-        'black-zerobi': '#FEE1DA',
+        'yellow-zerobi': '#ECFB72',
+        'black-zerobi': '#000000',
         'pink-zerobi': '#FEE1DA',
         'blue-zerobi': '#0100FE'
       },

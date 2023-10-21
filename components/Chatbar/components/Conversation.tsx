@@ -106,7 +106,7 @@ export const ConversationComponent = ({ conversation }: Props) => {
         <div className="flex w-full items-center gap-3 rounded-lg bg-black-zerobi/90 p-3">
           <IconMessage size={18} />
           <input
-            className="mr-12 flex-1 overflow-hidden overflow-ellipsis border-neutral-400 bg-transparent text-left text-[12.5px] leading-3 text-yellow-zerobi outline-none focus:border-neutral-100"
+            className="mr-12 flex-1 overflow-hidden overflow-ellipsis border-neutral-400 bg-transparent text-left text-blue-zerobi text-[12.5px] leading-3 dark:text-yellow-zerobi outline-none focus:border-neutral-100"
             type="text"
             value={renameValue}
             onChange={(e) => setRenameValue(e.target.value)}
@@ -141,7 +141,7 @@ export const ConversationComponent = ({ conversation }: Props) => {
 
       {(isDeleting || isRenaming) &&
         selectedConversation?.id === conversation.id && (
-          <div className="absolute right-1 z-10 flex text-yellow-zerobi">
+          <div className="absolute right-1 z-10 flex text-blue-zerobi">
             <SidebarActionButton handleClick={handleConfirm}>
               <IconCheck size={18} />
             </SidebarActionButton>
@@ -154,7 +154,7 @@ export const ConversationComponent = ({ conversation }: Props) => {
       {selectedConversation?.id === conversation.id &&
         !isDeleting &&
         !isRenaming && (
-          <div className="absolute right-1 z-10 flex text-yellow-zerobi">
+          <div className="absolute right-1 z-10 flex text-blue-zerobi">
             <SidebarActionButton handleClick={handleOpenRenameModal}>
               <IconPencil size={18} />
             </SidebarActionButton>
